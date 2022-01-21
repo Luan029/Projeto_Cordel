@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Sriracha';
+    src: url("../fontes/Sriracha/Sriracha-Regular.ttf") format('truetype') ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Passion One';
+    src: url("../fontes/Passion_One/PassionOne-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: 'Passion One';
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps; /*Transforma todas as letras em letras maiúsculas. Mas, as primeiras letras ficam maiores*/
+}
+header > p {
+    padding-bottom: 50px;
+    font-family: verdana;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento duplo entre as frases*/
+    padding-left: 30px;
+    font-family: 'Sriracha';
+    font-size: 3.5vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+.imagem01 > p{
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.685);
+}
+.imagem02 > p{
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.685);
+}
+section > p{
+    padding-bottom: 2em;
+} 
+section.imagem01{
+    background-image: url('../imagens/background001.jpg');
+    text-shadow: 1px 1px 1px black;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+
+}
+section.imagem02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-family: verdana;
+}
